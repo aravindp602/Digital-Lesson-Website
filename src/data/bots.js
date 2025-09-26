@@ -76,6 +76,15 @@ export const chatbotData = [
     description: 'A structured approach to plan and execute your content strategy effectively.',
     embedType: 'iframe',
     embedUrl: 'https://workflow.getmindpal.com/content-strategy-canvas-wjNPq5Nt4FztB1u8' // Replace with the real URL
+},
+{
+    id: 'email-strategy-canvas', 
+    name: 'Email  Strategy Canvas', 
+    category: 'Business', 
+    icon: '/img/default.svg', 
+    description: 'A dedicated workspace to craft and optimize your email strategy.',
+    embedType: 'iframe',
+    embedUrl: 'https://workflow.getmindpal.com/email-strategy-canvas-MzxMUMRX68G5Rvhs' // Replace with the real URL
 }
   
   
