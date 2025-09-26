@@ -68,6 +68,15 @@ export const chatbotData = [
     embedUrl: 'https://workflow.getmindpal.com/seo-strategy-canvas-krXr1NsGJQLNvDgo' // Replace with the real URL
   },
 
+{
+    id: 'content-strategy-canvas', 
+    name: 'Content Strategy Canvas', 
+    category: 'Creativity', 
+    icon: '/img/edit-3.svg', 
+    description: 'A structured approach to plan and execute your content strategy effectively.',
+    embedType: 'iframe',
+    embedUrl: 'https://workflow.getmindpal.com/content-strategy-canvas-wjNPq5Nt4FztB1u8' // Replace with the real URL
+}
   
   
   // ... continue this pattern for all 42 of your bots ...
