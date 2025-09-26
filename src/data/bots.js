@@ -98,6 +98,16 @@ export const chatbotData = [
   description:'Create effective email sequences for marketing campaigns.',
   embedType:'iframe',
   embedUrl:'https://workflow.getmindpal.com/email-sequence-creator-3Z0x3qgFYG5jhwdS' // Replace with the real URL
+},
+
+{
+  id:'marketing strategy canvas',
+  name:'Marketing Strategy Canvas',
+  category:'Business',
+  icon:'/img/default.svg',
+  description:'A structured approach to develop and visualize your marketing strategy.',
+  embedType:'iframe',
+  embedUrl:'https://workflow.getmindpal.com/marketing-strategy-canvas-PsB2HkSJ7zRbYBSc' // Replace with the real URL
 }
   // ... continue this pattern for all 42 of your bots ...
 ];
