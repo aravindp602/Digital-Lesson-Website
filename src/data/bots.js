@@ -57,7 +57,7 @@ export const chatbotData = [
     embedUrl: 'https://workflow.getmindpal.com/pod-lnoNVpv49SuEljDp' // Replace with the real URL
   },
 
-      // Bot 5
+      // Bot 6
   { 
     id: 'SEO-Strategy-Canvas', 
     name: 'SEO Strategy Canvas', 
@@ -67,7 +67,7 @@ export const chatbotData = [
     embedType: 'iframe',
     embedUrl: 'https://workflow.getmindpal.com/seo-strategy-canvas-krXr1NsGJQLNvDgo' // Replace with the real URL
   },
-
+//bot 7
 {
     id: 'content-strategy-canvas', 
     name: 'Content Strategy Canvas', 
@@ -77,6 +77,8 @@ export const chatbotData = [
     embedType: 'iframe',
     embedUrl: 'https://workflow.getmindpal.com/content-strategy-canvas-wjNPq5Nt4FztB1u8' // Replace with the real URL
 },
+
+//bot 8
 {
     id: 'email-strategy-canvas', 
     name: 'Email  Strategy Canvas', 
@@ -85,9 +87,18 @@ export const chatbotData = [
     description: 'A dedicated workspace to craft and optimize your email strategy.',
     embedType: 'iframe',
     embedUrl: 'https://workflow.getmindpal.com/email-strategy-canvas-MzxMUMRX68G5Rvhs' // Replace with the real URL
+},
+  
+// Bot 9
+{
+  id:'email sequence creator',
+  name:'Email Sequence Creator',
+  category:'Business',
+  icon:'/img/default.svg',
+  description:'Create effective email sequences for marketing campaigns.',
+  embedType:'iframe',
+  embedUrl:'https://workflow.getmindpal.com/email-sequence-creator-3Z0x3qgFYG5jhwdS' // Replace with the real URL
 }
-  
-  
   // ... continue this pattern for all 42 of your bots ...
 ];
 
