@@ -44,6 +44,18 @@ export const chatbotData = [
     embedType: 'iframe',
     embedUrl: 'https://workflow.getmindpal.com/rtb--reasons-to-believe--JTcQj1Q8pSXDELSn' // Replace with the real URL
   },
+
+
+    // Bot 5
+  { 
+    id: 'POD', 
+    name: 'Positional Offer Designer', 
+    category: 'Technical', 
+    icon: '/img/code.svg', 
+    description: 'Helps design and position your product offers effectively.',
+    embedType: 'iframe',
+    embedUrl: 'https://workflow.getmindpal.com/pod-lnoNVpv49SuEljDp' // Replace with the real URL
+  },
   
   // ... continue this pattern for all 42 of your bots ...
 ];
