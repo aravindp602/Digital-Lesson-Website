@@ -1,90 +1,38 @@
-// src/components/Header.js
+// src/pages/dashboard.js
+import Head from 'next/head';
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { useSession, signIn, signOut } from "next-auth/react";
-import { useState, useEffect, useRef } from 'react';
-
-export default function Header() {
-  const router = useRouter();
-  const { data: session, status } = useSession();
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsDropdownOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [dropdownRef]);
-
+export default function DashboardPage() {
+  // Your dashboard logic for fetching favorites and history goes here
   return (
-    <header className="main-header">
-      <div className="container">
-        <Link href="/" className="logo">
-          {/* 
-            CRITICAL FIX: 
-            Changed the src from "/logo.png" to "/logo.svg" 
-            to match the actual file in your /public folder.
-          */}
-          <Image 
-            src="/logo.svg" 
-            alt="Agentic Collective Logo" 
-            width={40}
-            height={40}
-            priority
-          />
-          <span>Agentic Collective</span>
-        </Link>
-        
-        <div className="header-controls">
-          <nav>
-            <Link href="/" className={router.pathname === '/' ? 'is-active' : ''}>Explore</Link>
-            {session && (
-              <Link href="/dashboard" className={router.pathname === '/dashboard' ? 'is-active' : ''}>Dashboard</Link>
-            )}
-          </nav>
-          
-          <div className="header-actions">
-            <button className="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-                <span className="sun-icon">☀️</span>
-                <span className="moon-icon">🌙</span>
-            </button>
-            
-            <div className="auth-controls">
-              {status === "loading" ? (
-                <div className="loader"></div>
-              ) : session ? (
-                <div className="profile-menu" ref={dropdownRef}>
-                  <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="avatar-button">
-                    <img src={session.user.image} alt={session.user.name} className="avatar" />
-                  </button>
-                  {isDropdownOpen && (
-                    <div className="dropdown-menu">
-                      <div className="dropdown-header">
-                        <span className="user-name">{session.user.name}</span>
-                        <span className="user-email">{session.user.email}</span>
-                      </div>
-                      <Link href="/dashboard" className="dropdown-item">Dashboard</Link>
-                      <button onClick={() => signOut({ callbackUrl: '/' })} className="dropdown-item signout">
-                        Sign Out
-                      </button>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <button onClick={() => signIn()} className="signin-btn">Sign In</button>
-              )}
-            </div>
-          </div>
+    <>
+      <Head>
+        <title>Your Dashboard | Digital Lesson</title>
+      </Head>
+
+      <section className="dashboard-hero">
+        <div className="container">
+            <h1>Welcome Back</h1>
+            <p>Here are your favorite agents and recent conversations, ready when you are.</p>
         </div>
-      </div>
-    </header>
-  );
+      </section>
+
+      <section className="dashboard-section">
+        <div className="container">
+            <h2>Favorite Agents</h2>
+            <div id="favorite-bots-grid" className="chatbot-grid">
+                <div className="placeholder-text">Favorites will be loaded here.</div>
+            </div>
+        </div>
+      </section>
+
+      <section className="dashboard-section">
+        <div className="container">
+            <h2>Recent Conversations</h2>
+            <div id="recent-conversations-list" className="conversations-list">
+                <div className="placeholder-text">Recent chats will be loaded here.</div>
+            </div>
+        </div>
+      </section>
+    </>
+  )
 }
