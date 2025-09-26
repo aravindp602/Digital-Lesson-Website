@@ -108,7 +108,27 @@ export const chatbotData = [
   description:'A structured approach to develop and visualize your marketing strategy.',
   embedType:'iframe',
   embedUrl:'https://workflow.getmindpal.com/marketing-strategy-canvas-PsB2HkSJ7zRbYBSc' // Replace with the real URL
+},
+
+{
+  id : 'Neil the creative director',
+  name : 'Neil the Creative Director',
+  category : 'Creativity',
+  icon : '/img/edit-3.svg',
+  description : 'An AI-powered creative director that helps brainstorm and refine creative concepts for marketing campaigns, branding, and content creation.',
+  embedType : 'iframe',
+  embedUrl : 'https://workflow.getmindpal.com/creative-strategy-canvas-kwOzZWvzc9nHPf0o' // Replace with the real URL
+},
+{
+  id:'brand architecture ai',
+  name:'Brand Architecture AI',
+  category:'Business',
+  icon:'/img/default.svg',
+  description:'Helps structure and organize your brand portfolio effectively.',
+  embedType:'iframe',
+  embedUrl:'https://workflow.getmindpal.com/brand-architect-ai-LUNo0Q698eQAOkyy' // Replace with the real URL
 }
+
   // ... continue this pattern for all 42 of your bots ...
 ];
 
