@@ -57,7 +57,7 @@ export default function HomePage() {
     return (
         <>
             <Head>
-                <title>Digital Lessons | Explore</title>
+                <title>Digital Lesson | Explore</title>
                 <meta name="description" content="Explore a collection of 42 specialized AI agents, each designed for a unique purpose." />
             </Head>
             

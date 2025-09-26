@@ -6,7 +6,7 @@ export default function DashboardPage() {
   return (
     <>
       <Head>
-        <title>Your Dashboard | Digital Lessons</title>
+        <title>Your Dashboard | Digital Lesson</title>
       </Head>
 
       <section className="dashboard-hero">
