@@ -2,7 +2,7 @@
 
 import Head from 'next/head';
 import Link from 'next/link';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { chatbotData, categories } from '../data/bots';
 
 export default function HomePage() {
@@ -13,11 +13,13 @@ export default function HomePage() {
     const [modalData, setModalData] = useState(null);
     const [filteredBots, setFilteredBots] = useState(chatbotData);
 
+    // Load favorites from localStorage on initial component mount
     useEffect(() => {
         const savedFavorites = JSON.parse(localStorage.getItem('favoriteBots')) || [];
         setFavorites(savedFavorites);
     }, []);
 
+    // Effect to handle filtering when search term or category changes
     useEffect(() => {
         const lowerSearchTerm = searchTerm.toLowerCase();
         const newFilteredBots = chatbotData.filter(bot => {
@@ -43,13 +45,19 @@ export default function HomePage() {
         localStorage.setItem('favoriteBots', JSON.stringify(updatedFavorites));
     };
 
-    const openModal = (bot) => { setModalData(bot); setIsModalOpen(true); };
-    const closeModal = () => { setIsModalOpen(false); };
+    const openModal = (bot) => {
+        setModalData(bot);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <>
             <Head>
-                <title>Agentic Collective | Explore</title>
+                <title>Digital Lessons | Explore</title>
                 <meta name="description" content="Explore a collection of 42 specialized AI agents, each designed for a unique purpose." />
             </Head>
             
@@ -67,12 +75,16 @@ export default function HomePage() {
                                 <div className="showcase-card"><span>Code Refactor</span></div>
                                 <div className="showcase-card"><span>Market Analysis</span></div>
                                 <div className="showcase-card"><span>Travel Planner</span></div>
+                                <div className="showcase-card"><span>SQL Generator</span></div>
+                                <div className="showcase-card"><span>Meeting Assistant</span></div>
                             </div>
                             <div className="marquee-content">
                                 <div className="showcase-card"><span>Creative Writer</span></div>
                                 <div className="showcase-card"><span>Code Refactor</span></div>
                                 <div className="showcase-card"><span>Market Analysis</span></div>
                                 <div className="showcase-card"><span>Travel Planner</span></div>
+                                <div className="showcase-card"><span>SQL Generator</span></div>
+                                <div className="showcase-card"><span>Meeting Assistant</span></div>
                             </div>
                         </div>
                     </div>
@@ -119,9 +131,8 @@ export default function HomePage() {
                     <div className="chatbot-grid">
                         {filteredBots.length > 0 ? (
                             filteredBots.map(bot => {
-                                const launchUrl = bot.embedType === 'iframe' 
-                                    ? `/embed/${bot.id}` 
-                                    : `/chat/${bot.id}`;
+                                // This logic correctly points all bots to the embed page.
+                                const launchUrl = `/embed/${bot.id}`;
                                 const isFavorite = favorites.includes(bot.id.toString());
 
                                 return (
@@ -135,7 +146,7 @@ export default function HomePage() {
                                         </button>
                                         <div className="card-content">
                                             <div className="card-header">
-                                                <div className="card-icon-wrapper"><img src={bot.icon} alt="" className="card-icon" /></div>
+                                                <div className="card-icon-wrapper"><img src={bot.icon} alt={`${bot.name} icon`} className="card-icon" /></div>
                                                 <h3>{bot.name}</h3>
                                             </div>
                                             <p className="card-description">{bot.description}</p>
@@ -171,11 +182,7 @@ export default function HomePage() {
                             <h2>{modalData.name}</h2>
                             <span className="modal-category">{modalData.category}</span>
                             <p>{modalData.description}</p>
-                            <h4>Example Prompts:</h4>
-                            <ul>
-                                {modalData.examples.map((ex, i) => <li key={i}>{ex}</li>)}
-                            </ul>
-                            <Link href={`/chat/${modalData.id}`} className="modal-launch-btn">Start Conversation</Link>
+                            <Link href={`/embed/${modalData.id}`} className="modal-launch-btn">Start Conversation</Link>
                         </div>
                     </div>
                 </div>

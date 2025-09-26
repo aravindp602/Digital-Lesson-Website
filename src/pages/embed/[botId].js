@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { chatbotData } from '../../data/bots';
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 
 const getBotData = (botId) => chatbotData.find(bot => bot.id === botId);
 
@@ -19,10 +18,9 @@ export default function EmbedPage() {
         }
     }, [botId]);
 
-    // Apply a specific class to the body tag for our CSS to target
+    // Apply a specific class to the body for our CSS to target
     useEffect(() => {
         document.body.classList.add('iframe-embed-page');
-        // Cleanup function to remove the class when the user navigates away
         return () => {
             document.body.classList.remove('iframe-embed-page');
         };
@@ -39,15 +37,15 @@ export default function EmbedPage() {
     return (
         <>
             <Head>
-                <title>Chat with {bot.name} | Agentic Collective</title>
-                {/* Important for mobile responsiveness with iframes */}
+                <title>Agent: {bot.name} | Agentic Collective</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             </Head>
 
+            {/* This is the direct iframe embed from your instructions */}
             <iframe 
                 src={bot.embedUrl}
                 allow="clipboard-read; clipboard-write; microphone"
-                title={bot.name} // Accessibility best practice
+                title={bot.name}
                 className="full-page-iframe"
             ></iframe>
         </>

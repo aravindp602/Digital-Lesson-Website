@@ -8,7 +8,7 @@ export default function Header({ theme, toggleTheme }) {
   return (
     <header className="main-header">
       <div className="container">
-        <Link href="/" className="logo">Agentic Collective</Link>
+        <Link href="/" className="logo">Digital Lessons</Link>
         <div className="header-controls">
           <nav>
             <Link href="/" className={router.pathname === '/' ? 'is-active' : ''}>Explore</Link>
