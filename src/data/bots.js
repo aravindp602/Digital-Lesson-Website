@@ -20,7 +20,7 @@ export const chatbotData = [
     icon: '/img/default.svg',
     description: 'Generates unique business names based on your inputs.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/brand-naming-hj4dwYUt2meyyodk' // Replace with the real URL
+    embedUrl: 'https://workflow.getmindpal.com/brand-naming-hj4dwYUt2meyyodk' 
   },
   
   // Bot 3 (Using your previously defined data as an example)
@@ -31,7 +31,7 @@ export const chatbotData = [
     icon: '/img/edit-3.svg', 
     description: 'Generates compelling brand positioning statements.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/brand-positioning-statement-xov5wYaKMSIl3q0l' // Replace with the real URL
+    embedUrl: 'https://workflow.getmindpal.com/brand-positioning-statement-xov5wYaKMSIl3q0l' 
   },
   
   // Bot 4
@@ -42,7 +42,7 @@ export const chatbotData = [
     icon: '/img/code.svg', 
     description: 'Generates strong reasons to believe for your brand messaging.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/rtb--reasons-to-believe--JTcQj1Q8pSXDELSn' // Replace with the real URL
+    embedUrl: 'https://workflow.getmindpal.com/rtb--reasons-to-believe--JTcQj1Q8pSXDELSn' 
   },
 
 
@@ -54,7 +54,7 @@ export const chatbotData = [
     icon: '/img/code.svg', 
     description: 'Helps design and position your product offers effectively.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/pod-lnoNVpv49SuEljDp' // Replace with the real URL
+    embedUrl: 'https://workflow.getmindpal.com/pod-lnoNVpv49SuEljDp' 
   },
 
       // Bot 6
@@ -65,7 +65,7 @@ export const chatbotData = [
     icon: '/img/code.svg', 
     description: 'A comprehensive tool for developing and visualizing your SEO strategy.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/seo-strategy-canvas-krXr1NsGJQLNvDgo' // Replace with the real URL
+    embedUrl: 'https://workflow.getmindpal.com/seo-strategy-canvas-krXr1NsGJQLNvDgo' 
   },
 //bot 7
 {
@@ -75,7 +75,7 @@ export const chatbotData = [
     icon: '/img/edit-3.svg', 
     description: 'A structured approach to plan and execute your content strategy effectively.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/content-strategy-canvas-wjNPq5Nt4FztB1u8' // Replace with the real URL
+    embedUrl: 'https://workflow.getmindpal.com/content-strategy-canvas-wjNPq5Nt4FztB1u8' 
 },
 
 //bot 8
@@ -86,7 +86,7 @@ export const chatbotData = [
     icon: '/img/default.svg', 
     description: 'A dedicated workspace to craft and optimize your email strategy.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/email-strategy-canvas-MzxMUMRX68G5Rvhs' // Replace with the real URL
+    embedUrl: 'https://workflow.getmindpal.com/email-strategy-canvas-MzxMUMRX68G5Rvhs' 
 },
   
 // Bot 9
@@ -97,7 +97,7 @@ export const chatbotData = [
   icon:'/img/default.svg',
   description:'Create effective email sequences for marketing campaigns.',
   embedType:'iframe',
-  embedUrl:'https://workflow.getmindpal.com/email-sequence-creator-3Z0x3qgFYG5jhwdS' // Replace with the real URL
+  embedUrl:'https://workflow.getmindpal.com/email-sequence-creator-3Z0x3qgFYG5jhwdS' 
 },
 
 {
@@ -107,7 +107,7 @@ export const chatbotData = [
   icon:'/img/default.svg',
   description:'A structured approach to develop and visualize your marketing strategy.',
   embedType:'iframe',
-  embedUrl:'https://workflow.getmindpal.com/marketing-strategy-canvas-PsB2HkSJ7zRbYBSc' // Replace with the real URL
+  embedUrl:'https://workflow.getmindpal.com/marketing-strategy-canvas-PsB2HkSJ7zRbYBSc' 
 },
 
 {
@@ -117,7 +117,7 @@ export const chatbotData = [
   icon : '/img/edit-3.svg',
   description : 'An AI-powered creative director that helps brainstorm and refine creative concepts for marketing campaigns, branding, and content creation.',
   embedType : 'iframe',
-  embedUrl : 'https://workflow.getmindpal.com/creative-strategy-canvas-kwOzZWvzc9nHPf0o' // Replace with the real URL
+  embedUrl : 'https://workflow.getmindpal.com/creative-strategy-canvas-kwOzZWvzc9nHPf0o' 
 },
 {
   id:'brand architecture ai',
@@ -126,8 +126,19 @@ export const chatbotData = [
   icon:'/img/default.svg',
   description:'Helps structure and organize your brand portfolio effectively.',
   embedType:'iframe',
-  embedUrl:'https://workflow.getmindpal.com/brand-architect-ai-LUNo0Q698eQAOkyy' // Replace with the real URL
+  embedUrl:'https://workflow.getmindpal.com/brand-architect-ai-LUNo0Q698eQAOkyy' 
+},
+{
+  id:'Clarity Compass',
+  name:'Clarity Compass',
+  category:'Business',
+  icon:'/img/default.svg',
+  description:'A tool to help define and clarify your business vision and goals.',
+  embedType:'iframe',
+  embedUrl:'https://workflow.getmindpal.com/clarity-compass-Av5u41Tkj7RSMQYd' 
 }
+
+
 
   // ... continue this pattern for all 42 of your bots ...
 ];
