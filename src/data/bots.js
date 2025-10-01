@@ -75,7 +75,7 @@ export const chatbotData = [
     icon: '/img/edit-3.svg', 
     description: 'A structured approach to plan and execute your content strategy effectively.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/content-strategy-canvas-wjNPq5Nt4FztB1u8' 
+    embedUrl: 'https://workflow.getmindpal.com/content-strategy-canvas-wjnpq5nt4fztb1u8' 
 },
 
 //bot 8
@@ -86,7 +86,7 @@ export const chatbotData = [
     icon: '/img/default.svg', 
     description: 'A dedicated workspace to craft and optimize your email strategy.',
     embedType: 'iframe',
-    embedUrl: 'https://workflow.getmindpal.com/email-strategy-canvas-MzxMUMRX68G5Rvhs' 
+    embedUrl: 'https://workflow.getmindpal.com/email-strategy-canvas-mzxmumrx68g5rvhs' 
 },
   
 // Bot 9
@@ -97,7 +97,7 @@ export const chatbotData = [
   icon:'/img/default.svg',
   description:'Create effective email sequences for marketing campaigns.',
   embedType:'iframe',
-  embedUrl:'https://workflow.getmindpal.com/email-sequence-creator-3Z0x3qgFYG5jhwdS' 
+  embedUrl:'https://workflow.getmindpal.com/email-sequence-creator-3z0x3qgfyg5jhwds'
 },
 
 {
@@ -107,7 +107,7 @@ export const chatbotData = [
   icon:'/img/default.svg',
   description:'A structured approach to develop and visualize your marketing strategy.',
   embedType:'iframe',
-  embedUrl:'https://workflow.getmindpal.com/marketing-strategy-canvas-PsB2HkSJ7zRbYBSc' 
+  embedUrl:'https://workflow.getmindpal.com/marketing-strategy-canvas-psb2hksj7zrbybsc'
 },
 
 {
@@ -117,7 +117,7 @@ export const chatbotData = [
   icon : '/img/edit-3.svg',
   description : 'An AI-powered creative director that helps brainstorm and refine creative concepts for marketing campaigns, branding, and content creation.',
   embedType : 'iframe',
-  embedUrl : 'https://workflow.getmindpal.com/creative-strategy-canvas-kwOzZWvzc9nHPf0o' 
+  embedUrl : 'https://workflow.getmindpal.com/creative-strategy-canvas-kwozzwvzc9nhpf0o' 
 },
 {
   id:'brand architecture ai',
@@ -126,7 +126,7 @@ export const chatbotData = [
   icon:'/img/default.svg',
   description:'Helps structure and organize your brand portfolio effectively.',
   embedType:'iframe',
-  embedUrl:'https://workflow.getmindpal.com/brand-architect-ai-LUNo0Q698eQAOkyy' 
+  embedUrl:'https://workflow.getmindpal.com/brand-architect-ai-luno0q698eqaokyy'
 },
 {
   id:'Clarity Compass',
@@ -136,7 +136,17 @@ export const chatbotData = [
   description:'A tool to help define and clarify your business vision and goals.',
   embedType:'iframe',
   embedUrl:'https://workflow.getmindpal.com/clarity-compass-Av5u41Tkj7RSMQYd' 
-}
+},
+
+{
+  id:'Transformap',
+  name:'Transformap',
+  category:'Business',
+  icon:'/img/default.svg',
+  description:'A strategic tool to map out and visualize business transformations and growth strategies.',
+  embedType:'iframe',
+  embedUrl:'https://workflow.getmindpal.com/transformap-nkjbwglixj6fhanf' 
+},
 
 
 
