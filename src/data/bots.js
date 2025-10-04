@@ -147,7 +147,15 @@ export const chatbotData = [
   embedType:'iframe',
   embedUrl:'https://workflow.getmindpal.com/transformap-nkjbwglixj6fhanf' 
 },
-
+{
+  id:'playbook 4.0',
+  name:'Playbook 4.0',
+  category:'Business',
+  icon:'/img/default.svg',
+  description:'A comprehensive guide to developing and implementing effective business strategies.',
+  embedType:'iframe',
+  embedUrl:'https://workflow.getmindpal.com/playbook-4-0-iqyuv11ejebr2131'
+}
 
 
   // ... continue this pattern for all 42 of your bots ...
